@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблична фіксована верстка</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        table {
+            width: 1440px; 
+            height: 100%;
+            border-collapse: separate;
+            border-spacing: 50px 0px;
+            margin: 0 auto; 
+        }
+        td {
+            border: 1px solid black;
+        }
+
+        #container {
+            margin: 0 -20px;
+        }
+
+        .header {
+            background-color: blue;
+            height: 20px;
+            color: white;
+            text-align: center;
+        }
+        .sidebar {
+            background-color: yellow;
+            width: 200px;
+            vertical-align: top;
+            height: 100%;
+            text-align: center;
+        }
+        .footer {
+            background-color: blue;
+            height: 50px;
+            color: white;
+            text-align: center;
+        }
+        .content {
+            background-color: white;
+            text-align: center;
+            width: 1200px;
+        }
+    </style>
+</head>
+<body id="container">
+    <table>
+        <tr>
+            <td rowspan="4" class="sidebar">2</td>
+            <td class="header">1</td>
+        </tr>
+        <tr>
+            <td class="content">4</td>
+        </tr>
+        <tr>
+            <td class="footer">3</td>
+        </tr>
+    </table>
+</body>
+</html>
