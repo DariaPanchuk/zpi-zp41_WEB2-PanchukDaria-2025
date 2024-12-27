@@ -23,6 +23,7 @@ img {
     font-weight: 400;
     font-size: 16px;
     color: #6D6D6C;
+    background-color: #ffff;
 }
 
 
@@ -151,7 +152,6 @@ img {
 
 .products__list {
     display: flex;
-    flex-wrap: wrap;
     width: calc(100% + 30px);
     margin-left: -15px;
 }
